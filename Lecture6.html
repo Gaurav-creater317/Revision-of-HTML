@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 6: HTML Media & Symbols</title>
+</head>
+<body>
+
+<!-- Header -->
+<header style="text-align:center;">
+  <h1>🎬 Lecture 6: HTML Media , Symbols and Deployment Basics</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 Series launched by Rohit Negi Bhaiya on Coder Army (YOU TUBE) 2025 🔥</marquee>
+  <hr>
+  <nav>
+    <center>
+      <a href="index.html">🏠 Home</a> | 
+      <a href="lecture1.html">Lecture 1</a> | 
+      <a href="lecture2.html">Lecture 2</a> | 
+      <a href="lecture3.html">Lecture 3</a> | 
+      <a href="lecture4.html">Lecture 4</a> | 
+      <a href="lecture5.html">Lecture 5</a> | 
+      <a href="lecture6.html">Lecture 6</a>
+    </center>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: Introduction to HTML Media -->
+<section id="html-media-intro">
+  <h2>1️⃣ HTML Media Basics</h2>
+  <details open>
+    <summary>First Principle: The Web is More Than Text and Images</summary>
+    <p>Websites need more than static text and images. HTML5 introduced <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags to embed media without plugins like Flash or Silverlight.</p>
+    <p>Key Benefits:</p>
+    <ul>
+      <li>Standardized and plugin-free playback</li>
+      <li>Cross-browser compatibility</li>
+      <li>Better security and performance</li>
+    </ul>
+    <figure>
+      <img src="https://dotnettrickscloud.blob.core.windows.net/img/html/3720230511233700.webp" 
+           alt="HTML5 Media Example" width="500">
+      <figcaption>HTML5 made embedding media simple with audio and video tags.</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 2: Video Basics -->
+<section id="video-basics">
+  <h2>2️⃣ Video Tag</h2>
+  <details>
+    <summary>Embedding Video</summary>
+    <p>The simplest video embed:</p>
+    <pre>
+&lt;video src="my-video.mp4" controls&gt;&lt;/video&gt;
+    </pre>
+    <p>Attributes:</p>
+    <ul>
+      <li><code>controls</code>: Display play/pause, volume, and fullscreen controls</li>
+      <li><code>width</code> & <code>height</code>: Set player dimensions</li>
+      <li><code>autoplay</code>: Starts video automatically (use <code>muted</code> to avoid browser blocking)</li>
+      <li><code>loop</code>: Repeats video automatically</li>
+      <li><code>poster</code>: Image shown before video plays</li>
+    </ul>
+    <figure>
+      <img src="https://res.cloudinary.com/cloudinary-marketing/images/f_auto,q_auto/v1647045695/31_HTML5_video_tags/31_HTML5_video_tags.jpg?_i=AA" 
+           alt="HTML5 Video Tag Icon" width="200">
+      <figcaption>HTML5 Video Tag Icon</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 3: Audio Tag -->
+<section id="audio-basics">
+  <h2>3️⃣ Audio Tag</h2>
+  <details>
+    <summary>Embedding Audio</summary>
+    <p>The <code>&lt;audio&gt;</code> tag works like <code>&lt;video&gt;</code> but without a visual component.</p>
+    <pre>
+&lt;p&gt;Listen to our theme song:&lt;/p&gt;
+&lt;audio src="audio/theme-song.mp3" controls&gt;&lt;/audio&gt;
+    </pre>
+    <p>Supports same attributes as video: <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code>.</p>
+    <figure>
+      <img src="https://samanthaming.gumlet.io/tidbits/82-html-audio-tag.jpg.gz?format=auto" 
+           alt="HTML5 Audio Example" width="400">
+      <figcaption>HTML5 Audio Tag Example</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 4: Advanced Video: Source & Track -->
+<section id="advanced-video">
+  <h2>4️⃣ Advanced Video: Source & Track</h2>
+  <details>
+    <summary>Browser Compatibility & Accessibility</summary>
+    <p>Multiple video formats ensure cross-browser support:</p>
+    <pre>
+&lt;video controls poster="thumbnail.jpg"&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Sorry, your browser doesn't support embedded videos.
+&lt;/video&gt;
+    </pre>
+    <p>Add captions/subtitles using <code>&lt;track&gt;</code> for accessibility:</p>
+    <pre>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
+  &lt;track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Español"&gt;
+&lt;/video&gt;
+    </pre>
+    <figure>
+      <img src="https://samanthaming.gumlet.io/tidbits/91-html-video.jpg.gz" 
+           alt="HTML5 Video with Captions Example" width="500">
+      <figcaption>Video with captions and subtitles improves accessibility.</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 5: Video Embedding Methods -->
+<section id="video-methods">
+  <h2>5️⃣ Two Ways to Embed Video</h2>
+  <details>
+    <summary>Source Method vs Src Method</summary>
+    
+    <p><strong>Example 1: Source Method (Professional)</strong></p>
+    <pre>
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+    </pre>
+    
+    <p><strong>Example 2: Src Method (Simple)</strong></p>
+    <pre>
+&lt;video src="a.mp4" controls&gt;&lt;/video&gt;
+    </pre>
+    
+    <p>Comparison:</p>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th>Feature</th>
+        <th>Source Method</th>
+        <th>Src Method</th>
+      </tr>
+      <tr>
+        <td>Browser Compatibility</td>
+        <td>Excellent (multiple formats)</td>
+        <td>Good, single format only</td>
+      </tr>
+      <tr>
+        <td>Flexibility</td>
+        <td>High</td>
+        <td>Low</td>
+      </tr>
+      <tr>
+        <td>Simplicity</td>
+        <td>Complex</td>
+        <td>Very simple</td>
+      </tr>
+      <tr>
+        <td>Fallback</td>
+        <td>Custom text possible</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Use Case</td>
+        <td>Public-facing websites</td>
+        <td>Quick tests or internal projects</td>
+      </tr>
+    </table>
+  </details>
+</section>
+<hr>
+
+<!-- Section 6: HTML Symbols -->
+<section id="html-symbols">
+  <h2>6️⃣ HTML Symbols & Entities</h2>
+  <details>
+    <summary>Using Entities for Special Characters</summary>
+    <p>HTML uses entities to display reserved characters like &lt; and &gt; or symbols like ©.</p>
+    
+    <h3>Copyright Example</h3>
+    <pre>
+&lt;footer&gt;
+  &lt;p&gt;Copyright &copy; 2025 My Website. All Rights Reserved.&lt;/p&gt;
+&lt;/footer&gt;
+    </pre>
+    
+    <h3>Other Common Symbols</h3>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th>Symbol</th>
+        <th>Description</th>
+        <th>Entity Name</th>
+        <th>Entity Number</th>
+      </tr>
+      <tr><td>©</td><td>Copyright</td><td>&amp;copy;</td><td>&#169;</td></tr>
+      <tr><td>®</td><td>Registered Trademark</td><td>&amp;reg;</td><td>&#174;</td></tr>
+      <tr><td>™</td><td>Trademark</td><td>&amp;trade;</td><td>&#8482;</td></tr>
+      <tr><td>&lt;</td><td>Less-than</td><td>&amp;lt;</td><td>&#60;</td></tr>
+      <tr><td>&gt;</td><td>Greater-than</td><td>&amp;gt;</td><td>&#62;</td></tr>
+      <tr><td>&amp;</td><td>Ampersand</td><td>&amp;amp;</td><td>&#38;</td></tr>
+      <tr><td>"</td><td>Double Quote</td><td>&amp;quot;</td><td>&#34;</td></tr>
+    </table>
+    <h2>5️⃣ Video Tutorial 🎬</h2>
+    <details>
+      <summary>Watch Full HTML Media , Symbols and Deployment Basics Tutorial</summary>
+      <center>
+        <iframe width="600" height="340" src="https://www.youtube.com/embed/NGYp1zCBthk" title="Lecture 6: Semantic Elements" frameborder="0" allowfullscreen></iframe>
+      </center>
+     </details>
+  </details>
+</section>
+<hr>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="lecture5.html">Previous: Lecture 5</a> | 
+    <a href="index.html">Home Page</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revise Sheet |  Created By Gaurav 🚀</p>
+</footer>
+
+</main>
+</body>
+</html>

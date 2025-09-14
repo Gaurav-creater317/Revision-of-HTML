@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 5: HTML Forms & User Input | Hackathon Edition</title>
+  <meta name="description" content="HTML Forms & User Input explained with input types, labels, radio buttons, checkboxes, dropdowns, buttons, and accessibility tips. Beginner-friendly with examples and revision notes.">
+  <meta name="keywords" content="HTML forms, input types, HTML5, labels, accessibility, radio buttons, checkboxes, textarea, dropdown, buttons, revision, interview questions">
+  <meta name="author" content="Gaurav Mehra">
+</head>
+<body>
+
+<!-- Header -->
+<header style="text-align:center;">
+  <h1>📝 Lecture 5: HTML Forms & User Input</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 Series launched by Rohit Negi Bhaiya on Coder Army (YOUTUBE) 2025 🔥</marquee>
+  <hr>
+  <nav>
+    <center>
+      <a href="index.html">🏠 Home</a> | 
+      <a href="lecture1.html">Lecture 1</a> | 
+      <a href="lecture2.html">Lecture 2</a> | 
+      <a href="lecture3.html">Lecture 3</a> | 
+      <a href="lecture4.html">Lecture 4</a> | 
+      <a href="lecture5.html">Lecture 5</a> | 
+      <a href="lecture6.html">Lecture 6</a>
+    </center>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: Introduction -->
+<section id="forms-intro">
+  <h2>1️⃣ Introduction to Forms</h2>
+  <details open>
+    <summary>Why Forms are Essential</summary>
+    <p>Forms allow websites to <strong>collect, validate, and process user input</strong>. Every interactive site (login, search, feedback, e-commerce) relies on forms.</p>
+    <ul>
+      <li><b>User Authentication:</b> Login, Sign Up</li>
+      <li><b>Data Collection:</b> Surveys, Feedback</li>
+      <li><b>Search:</b> Search bars, filters</li>
+      <li><b>E-commerce:</b> Checkout, Shipping info</li>
+    </ul>
+    <figure>
+      <img src="https://edutechwiki.unige.ch/mediawiki/images/9/90/Three-tier-web-architecture.png" alt="HTML Form Workflow" width="450">
+      <figcaption>Form → User Input → Server → Response</figcaption>
+    </figure>
+  </details>
+  <blockquote>
+    💡 <b>Tip:</b> Forms act as a <em>bridge</em> between user and website.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Section 2: Input Types -->
+<section id="input-types">
+  <h2>2️⃣ Input Types</h2>
+  <details>
+    <summary>HTML5 Input Types Deep Dive</summary>
+    <p>Inputs allow users to enter data. HTML5 added modern types to improve <b>validation</b> and <b>user experience</b>.</p>
+
+    <h3>Common Input Types:</h3>
+    <ul>
+      <li><code>text</code> – Single line text</li>
+      <li><code>password</code> – Hidden characters</li>
+      <li><code>email</code> – Validates email format</li>
+      <li><code>number</code> – Numeric only (+ min/max)</li>
+      <li><code>date</code> – Calendar picker</li>
+      <li><code>color</code> – Color selector</li>
+      <li><code>range</code> – Slider</li>
+      <li><code>file</code> – Upload files</li>
+    </ul>
+
+    <pre>
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="userEmail" required&gt;
+    </pre>
+    <p><b>Tip:</b> Use <code>required</code> for mandatory fields.</p>
+  </details>
+  <blockquote>
+    ❓ <b>Interview Question:</b> What’s the difference between <code>type="text"</code> and <code>type="email"</code>?  
+    ✅ <b>Answer:</b> <code>text</code> accepts any string, while <code>email</code> validates the input format.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Section 3: Labels -->
+<section id="labels-accessibility">
+  <h2>3️⃣ Labels & Accessibility</h2>
+  <details>
+    <summary>Making Forms User-Friendly</summary>
+    <p>Labels <b>connect inputs with descriptions</b>. Essential for accessibility (screen readers) & usability.</p>
+
+    <pre>
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+    </pre>
+
+    <ul>
+      <li>Always link <code>for</code> + <code>id</code>.</li>
+      <li>Place labels before inputs.</li>
+      <li>Do not replace labels with placeholders.</li>
+    </ul>
+    <figure>
+      <img src="https://www.myprograming.com/wp-content/uploads/2021/09/html-label-tag.jpg" alt="Form Label Example" width="400">
+      <img src="https://portent.com/wp-content/uploads/2020/12/Form-Field-Labels_proper-text-field-label.png" alt="Form Label Example" width="400">
+      <img src="https://portent.com/wp-content/uploads/2020/12/Form-Field-Labels_proper-select-field-label.png" alt="Form Label Example" width="400">
+      <figcaption>Labels improve accessibility</figcaption>
+    </figure>
+  </details>
+  <blockquote>
+    ❓ Why are labels better than placeholders?  
+    ✅ Labels remain visible and help users + assistive technology.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Section 4: Radio & Checkbox -->
+<section id="radio-checkbox">
+  <h2>4️⃣ Radio Buttons & Checkboxes</h2>
+  <details>
+    <summary>Select One or Many Options</summary>
+
+    <h3>Radio Buttons</h3>
+    <p>Allow only <b>one selection per group</b>.</p>
+    <pre>
+&lt;input type="radio" id="male" name="gender" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+
+&lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;
+    </pre>
+
+    <h3>Checkboxes</h3>
+    <p>Allow <b>multiple selections</b>.</p>
+    <pre>
+&lt;input type="checkbox" id="cheese" name="toppings" value="cheese"&gt;
+&lt;label for="cheese"&gt;Cheese&lt;/label&gt;
+
+&lt;input type="checkbox" id="pepper" name="toppings" value="pepper"&gt;
+&lt;label for="pepper"&gt;Pepper&lt;/label&gt;
+    </pre>
+  </details>
+  <blockquote>
+    ❓ Difference between Radio & Checkbox?  
+    ✅ Radio = one option only, Checkbox = multiple allowed.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Section 5: Textarea & Dropdown -->
+<section id="textarea-dropdown">
+  <h2>5️⃣ Textarea & Dropdown</h2>
+  <details>
+    <summary>For Long Input & Many Choices</summary>
+
+    <h3>Textarea</h3>
+    <pre>
+&lt;label for="comments"&gt;Your Message:&lt;/label&gt;
+&lt;textarea id="comments" name="comments" rows="5" cols="40"&gt;&lt;/textarea&gt;
+    </pre>
+
+    <h3>Dropdown (Select)</h3>
+    <pre>
+&lt;label for="country"&gt;Country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+  &lt;option value=""&gt;--Select--&lt;/option&gt;
+  &lt;option value="us"&gt;USA&lt;/option&gt;
+  &lt;option value="in"&gt;India&lt;/option&gt;
+&lt;/select&gt;
+    </pre>
+  </details>
+  <blockquote>
+    💡 Dropdown is better when there are 5+ options; radio works best for short lists.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Section 6: Buttons -->
+<section id="buttons-submission">
+  <h2>6️⃣ Buttons & Submission</h2>
+  <details>
+    <summary>How Forms are Submitted</summary>
+    <pre>
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;button type="reset"&gt;Clear Form&lt;/button&gt;
+    </pre>
+
+    <ul>
+      <li>Use meaningful button text (e.g., "Register").</li>
+      <li>Use <code>reset</code> carefully, it clears all inputs.</li>
+      <li>Style buttons with CSS for better UX.</li>
+    </ul>
+  </details>
+  <blockquote>
+    ❓ Difference between <code>&lt;button&gt;</code> and <code>&lt;input type="submit"&gt;</code>?  
+    ✅ Both submit, but <code>&lt;button&gt;</code> can contain HTML & icons.
+  </blockquote>
+</section>
+<hr>
+
+<!-- Quick Revision -->
+<section id="revision">
+  <h2>📌 Quick Revision (Lecture 5)</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr><th>Feature</th><th>Usage</th></tr>
+    <tr><td>Forms</td><td>Collect & send user input</td></tr>
+    <tr><td>Inputs</td><td>text, password, email, number, date, color, range, file</td></tr>
+    <tr><td>Labels</td><td>Improve accessibility & usability</td></tr>
+    <tr><td>Radio</td><td>One choice per group</td></tr>
+    <tr><td>Checkbox</td><td>Multiple selections</td></tr>
+    <tr><td>Textarea</td><td>Multi-line input</td></tr>
+    <tr><td>Dropdown</td><td>Choose from a list</td></tr>
+    <tr><td>Buttons</td><td>Submit → send, Reset → clear</td></tr>
+  </table>
+  <h2>5️⃣ Video Tutorial 🎬</h2>
+  <details>
+    <summary>Watch Full HTML Forms Tutorial</summary>
+    <center>
+      <iframe width="600" height="340" src="https://www.youtube.com/embed/a4j9R_DvZ8M" title="Lecture 5: Forms & User Input" frameborder="0" allowfullscreen></iframe>
+    </center>
+  </details>
+</section>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="lecture4.html">Previous: Lecture 4</a> | 
+    <a href="lecture6.html">Next: Lecture 6</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revision Sheet | Created By Gaurav 🚀</p>
+</footer>
+
+</main>
+</body>
+</html>

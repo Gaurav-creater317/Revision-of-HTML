@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 4: File Paths & HTML Structure | Hackathon Edition</title>
+<meta name="description" content="Lecture 4 explains File Paths, HTML Boilerplate, div/class/id, Semantic HTML, and Multipage Navigation with examples, diagrams, and revision notes.">
+<meta name="keywords" content="HTML file paths, relative vs absolute path, HTML boilerplate, semantic HTML, div class id, multipage website navigation, HTML tutorial, Coder Army lectures">
+</head>
+<body>
+
+<!-- Header -->
+<header style="text-align:center;">
+  <h1>📂 Lecture 4: File Paths & HTML Structure</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 HTML Lecture Series by Rohit Negi Bhaiya | Powered by Coder Army (YouTube) 2025 🔥</marquee>
+  <hr>
+  <nav>
+    <center>
+      <a href="index.html">🏠 Home</a> | 
+      <a href="lecture1.html">Lecture 1</a> | 
+      <a href="lecture2.html">Lecture 2</a> | 
+      <a href="lecture3.html">Lecture 3</a> | 
+      <a href="lecture4.html">Lecture 4</a> | 
+      <a href="lecture5.html">Lecture 5</a> | 
+      <a href="lecture6.html">Lecture 6</a>
+    </center>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: File Path System -->
+<section id="file-paths">
+  <h2>1️⃣ File Path System</h2>
+  <details open>
+    <summary><b>Relative vs Absolute Paths (Most Common Interview Question)</b></summary>
+    <blockquote>
+      File paths tell the browser where your files (HTML, CSS, images, JS) are stored.  
+      <b>Relative paths</b> are based on project location.  
+      <b>Absolute paths</b> use full web addresses.
+    </blockquote>
+    
+    <h3>🔹 Relative Paths</h3>
+    <ul>
+      <li><b>Same folder:</b> <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code></li>
+      <li><b>Inside sub-folder:</b> <code>&lt;img src="images/logo.png" alt="Logo"&gt;</code></li>
+      <li><b>From parent folder:</b> <code>&lt;img src="../images/logo.png"&gt;</code></li>
+    </ul>
+    
+    <h3>🔹 Absolute Paths</h3>
+    <ul>
+      <li><b>Full URL:</b> <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></li>
+      <li><b>External Image:</b> <code>&lt;img src="https://upload.wikimedia.org/.../html5.svg"&gt;</code></li>
+    </ul>
+    
+    <figure>
+      <img src="https://myschoolhouse.in/admin-panel/assets/uploads_img/65aa18baa2c88_D_19_01_2024_T_06_37_46am.jpg" width="350" alt="File Path Diagram">
+      <img src="https://myschoolhouse.in/admin-panel/assets/uploads_img/65ae34118ede0_D_22_01_2024_T_09_23_29am.jpeg" width="350" alt="Folder Structure">
+      <figcaption><i>Folder Structure & Path Examples (Interview Focus)</i></figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 2: HTML Boilerplate -->
+<section id="boilerplate">
+  <h2>2️⃣ HTML Boilerplate</h2>
+  <details open>
+    <summary>Why Every Page Starts With Boilerplate?</summary>
+    <blockquote>
+      Boilerplate is the <b>standard starting structure</b> of an HTML document. It ensures 
+      <b>cross-browser compatibility</b> and provides essential metadata.
+    </blockquote>
+    
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    
+    <ul>
+      <li><b>&lt;!DOCTYPE html&gt;</b> → Defines HTML5.</li>
+      <li><b>&lt;meta charset="UTF-8"&gt;</b> → Supports all characters (✓, €, ©).</li>
+      <li><b>&lt;meta name="viewport"&gt;</b> → Makes responsive websites.</li>
+      <li><b>&lt;title&gt;</b> → Sets browser tab title (SEO-friendly).</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Section 3: div, class, id -->
+<section id="div-class-id">
+  <h2>3️⃣ div, class & id</h2>
+  <details>
+    <summary>Grouping & Targeting Elements (CSS + JS)</summary>
+    
+    <p><b>div:</b> A block-level container.</p>
+    <pre>
+&lt;div&gt;
+  &lt;img src="avatar.png"&gt;
+  &lt;h2&gt;Arjun Kumar&lt;/h2&gt;
+&lt;/div&gt;
+    </pre>
+
+    <p><b>class:</b> Reusable styling for multiple elements.</p>
+    <p><b>id:</b> Unique identifier for a single element.</p>
+    <pre>
+&lt;div id="featured" class="profile-card"&gt;...&lt;/div&gt;
+    </pre>
+
+    <ul>
+      <li><code>#featured { }</code> → Targets by <b>id</b></li>
+      <li><code>.profile-card { }</code> → Targets by <b>class</b></li>
+    </ul>
+
+    <p><b>span:</b> Inline container for highlighting text.</p>
+    <pre>
+&lt;p&gt;This is &lt;span class="highlight"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+    </pre>
+  </details>
+</section>
+<hr>
+
+<!-- Section 4: Semantic HTML -->
+<section id="semantic-html">
+  <h2>4️⃣ Semantic HTML</h2>
+  <details>
+    <summary>Why Semantic Tags Are Future-Proof?</summary>
+    <blockquote>
+      Semantic tags add <b>meaning</b> to content.  
+      They improve <b>SEO</b>, <b>screen readers</b>, and <b>code readability</b>.
+    </blockquote>
+    <ul>
+      <li><b>&lt;header&gt;</b> → Logo, Navigation</li>
+      <li><b>&lt;main&gt;</b> → Core content</li>
+      <li><b>&lt;footer&gt;</b> → Copyright & links</li>
+      <li><b>&lt;article&gt;</b> → Independent content block</li>
+      <li><b>&lt;section&gt;</b> → Groups related topics</li>
+      <li><b>&lt;aside&gt;</b> → Sidebar / extra info</li>
+    </ul>
+    <pre>
+&lt;header&gt;...&lt;/header&gt;
+&lt;main&gt;...&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+    </pre>
+  </details>
+</section>
+<hr>
+
+<!-- Section 5: Multipage Navigation -->
+<section id="multipage">
+  <h2>5️⃣ Multipage Website Navigation</h2>
+  <details>
+    <summary>How to Link Pages Seamlessly</summary>
+    <p>Use <code>&lt;a href&gt;</code> inside a <code>&lt;nav&gt;</code> for menus.</p>
+    <pre>
+&lt;nav&gt;
+  &lt;a href="index.html"&gt;Home&lt;/a&gt; | 
+  &lt;a href="lecture1.html"&gt;Lecture 1&lt;/a&gt; | 
+  &lt;a href="lecture2.html"&gt;Lecture 2&lt;/a&gt;
+&lt;/nav&gt;
+    </pre>
+    <p>👉 Keep navigation consistent across all pages (copy-paste header/footer).</p>
+  </details>
+</section>
+<hr>
+
+<!-- Quick Revision Notes -->
+<section id="revision">
+  <h2>📌 Quick Revision (Lecture 4)</h2>
+  <ul>
+    <li><b>File Paths:</b> Relative (project) vs Absolute (web).</li>
+    <li><b>Boilerplate:</b> Must-have structure for every HTML file.</li>
+    <li><b>div/class/id:</b> Used for grouping & targeting elements.</li>
+    <li><b>Semantic HTML:</b> Use meaningful tags for SEO + accessibility.</li>
+    <li><b>Navigation:</b> Keep consistent links across multipage sites.</li>
+  </ul>
+  <h2>5️⃣ Video Tutorial 🎬</h2>
+  <details>
+    <summary>Watch Full File Paths & HTML Structure Tutorial</summary>
+    <center>
+      <iframe width="600" height="340" src="https://www.youtube.com/embed/k78lNSAB8VY" title="Lecture 4: Links & Multimedia" frameborder="0" allowfullscreen></iframe>
+    </center>
+  </details>
+</section>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="lecture3.html">Previous: Lecture 3</a> | 
+    <a href="lecture5.html">Next: Lecture 5</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revise Sheet | Created By Gaurav 🚀</p>
+</footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 1: Internet & Web Basics | Hackathon Edition</title>
+<meta name="description" content="Lecture 1 of the HTML Hackathon Series: Beginner-friendly explanation of Internet fundamentals including IP, MAC, Ports, DNS, and Data Transmission.">
+<meta name="keywords" content="Internet basics, Web fundamentals, IP, MAC, DNS, Ports, TCP IP, Lecture 1, Hackathon">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 style="text-align:center;">🌐 Lecture 1: Internet & Web Basics</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 HTML & Web Series by Rohit Negi Bhaiya | Powered by Coder Army (YouTube) 2025 🔥</marquee>
+  <hr>
+  <nav style="text-align:center;">
+    <a href="index.html">🏠 Home</a> | 
+    <a href="lecture1.html">Lecture 1</a> | 
+    <a href="lecture2.html">Lecture 2</a> | 
+    <a href="lecture3.html">Lecture 3</a> | 
+    <a href="lecture4.html">Lecture 4</a> | 
+    <a href="lecture5.html">Lecture 5</a> | 
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: How Internet Works -->
+<section id="internet-basics">
+  <h2>1️⃣ How the Internet Works</h2>
+  <figure>
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*HqgKUgDYreRRxn7T" alt="How the Internet Works Diagram" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Basic overview of Internet connections</figcaption>
+  </figure>
+  <figure>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220602145532/HowDoesitWorkWhenYouGoogleFromaWebBrowser.png" alt="How Browser Queries Work" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>What happens when you Google something?</figcaption>
+  </figure>
+  <details open>
+    <summary>Overview</summary>
+    <blockquote>
+      The <b>Internet</b> is a <b>network of networks</b>, connecting billions of devices worldwide.
+    </blockquote>
+    <ul>
+      <li><b>Direct Link:</b> Early computers connected with simple cables.</li>
+      <li><b>Switch:</b> Enabled Local Area Networks (LAN).</li>
+      <li><b>Router:</b> Connected multiple networks across the globe.</li>
+      <li><b>IP Address:</b> Every device needs a unique identifier.</li>
+      <li><b>TCP/IP:</b> Protocol suite that ensures data reaches safely in packets.</li>
+    </ul>
+    <p><b>Fun fact:</b> The first message ever sent over ARPANET in 1969 was "LO" (they intended to type LOGIN but the system crashed). 🚀</p>
+  </details>
+</section>
+<hr>
+
+<!-- Section 2: IP Addresses -->
+<section id="ip-addresses">
+  <h2>2️⃣ IP Addresses</h2>
+  <figure>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241217170342121691/Private-_-Public-Address.webp" alt="Public vs Private IPs" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Public vs Private IPs</figcaption>
+  </figure>
+  <figure>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241217170153436945/IPv4-address-format.webp" alt="IPv4 Address Format" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>IPv4 Address Format</figcaption>
+  </figure>
+  <details>
+    <summary>IPv4 & IPv6</summary>
+    <ul>
+      <li><b>IPv4:</b> 32-bit, ~4.3 billion addresses (e.g., 142.250.184.142)</li>
+      <li><b>IPv6:</b> 128-bit, practically unlimited (~3.4×10^38)</li>
+      <li><b>Public IP:</b> Unique, visible on the internet, assigned by ISP</li>
+      <li><b>Private IP:</b> Used inside home/office networks (192.168.x.x, 10.x.x.x)</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Section 3: MAC Address -->
+<section id="mac-address">
+  <h2>3️⃣ MAC Address</h2>
+  <figure>
+    <img src="https://www.elprocus.com/wp-content/uploads/Address-Resolution-Protocol-Working.jpg" alt="MAC & ARP" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Address Resolution Protocol (ARP)</figcaption>
+  </figure>
+  <figure>
+    <img src="https://kinsta.com/wp-content/uploads/2023/02/MAC-vs-IP.png" alt="MAC vs IP Address" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>MAC vs IP: Hardware vs Software identity</figcaption>
+  </figure>
+  <details>
+    <summary>Definition & Formats</summary>
+    <ul>
+      <li><b>MAC (Media Access Control) Address:</b> Permanent hardware identifier, 48-bit.</li>
+      <li>Example: <code>3C:22:FB:A3:B4:C5</code> or <code>3C-22-FB-A3-B4-C5</code>.</li>
+      <li>Think of IP like a <i>postal address</i>, and MAC as the <i>person’s fingerprint</i>.</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Section 4: Port Numbers -->
+<section id="ports">
+  <h2>4️⃣ Port Numbers (0-65535)</h2>
+  <figure>
+    <img src="https://i.ytimg.com/vi/wSR0OaEfU8I/hq720.jpg" alt="Port Numbers Overview" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Well-known and custom ports</figcaption>
+  </figure>
+  <details>
+    <summary>Types & Examples</summary>
+    <ul>
+      <li><b>Well-Known (0-1023):</b> HTTP (80), HTTPS (443), SSH (22)</li>
+      <li><b>Registered (1024-49151):</b> MongoDB (27017), React (3000)</li>
+      <li><b>Dynamic (49152-65535):</b> Temporary client connections</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Section 5: DNS -->
+<section id="dns">
+  <h2>5️⃣ DNS (Domain Name System)</h2>
+  <figure>
+    <img src="https://lede-admin.defector.com/wp-content/uploads/sites/28/2021/10/scaled-out.png?w=1170&quality=75" alt="DNS Working" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>How DNS translates names to IPs</figcaption>
+  </figure>
+  <details>
+    <summary>How DNS Works</summary>
+    <ol>
+      <li>Browser checks cache (local or router).</li>
+      <li>If not found, query goes to Recursive Resolver (ISP).</li>
+      <li>Resolver asks Root → TLD → Authoritative Server.</li>
+      <li>Server responds with IP, cached for reuse.</li>
+    </ol>
+    <p><b>Fun fact:</b> Without DNS, we would type <code>142.250.184.142</code> instead of <code>google.com</code> 😲</p>
+  </details>
+</section>
+<hr>
+
+<!-- Section 6: Data Transmission -->
+<section id="data-transmission">
+  <h2>6️⃣ Data Transmission</h2>
+  <figure>
+    <img src="https://lede-admin.defector.com/wp-content/uploads/sites/28/2021/10/protocol-layers.png?w=1170&quality=75" alt="Protocol Layers" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Layers of communication in TCP/IP</figcaption>
+  </figure>
+  <figure>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240109160206/4514-660.png" alt="Packets Example" style="width:100%; max-width:600px; display:block; margin:auto;">
+    <figcaption>Data broken into packets</figcaption>
+  </figure>
+  <details>
+    <summary>Packets & Protocols</summary>
+    <ul>
+      <li>Large files are broken into small <b>packets</b>.</li>
+      <li>Each packet has source IP, destination IP, sequence number.</li>
+      <li><b>TCP/IP:</b> Ensures reliability, ordering, and delivery.</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Quick Summary Table -->
+<section id="summary">
+  <h2>7️⃣ Quick Revision</h2>
+  <details>
+    <summary>Problems & Solutions</summary>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr><th>Problem</th><th>Solution</th></tr>
+      <tr><td>Sharing data</td><td>Direct link</td></tr>
+      <tr><td>Multiple computers</td><td>Switch (LAN)</td></tr>
+      <tr><td>Multiple networks</td><td>Router</td></tr>
+      <tr><td>Identify devices</td><td>IP Address</td></tr>
+      <tr><td>Reliable transfer</td><td>Packets + TCP/IP</td></tr>
+    </table>
+  </details>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="index.html">Home</a> | <a href="lecture2.html">Next: Lecture 2</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revise Sheet |  Created By Gaurav 🚀</p>
+</footer>
+
+</body>
+</html>

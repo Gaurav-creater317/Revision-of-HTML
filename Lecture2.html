@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 2: HTML Deep Dive | Hackathon Edition</title>
+<meta name="description" content="Beginner-friendly HTML Lecture 2 covering headings, paragraphs, lists, links, images, and more with researchful explanations and examples.">
+<meta name="keywords" content="HTML tutorial, HTML basics, HTML for beginners, HTML hackathon, learn HTML, lecture 2, HTML examples">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 style="text-align:center;">🌐 Lecture 2: HTML Deep Dive</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 HTML Lecture Series by Rohit Negi Bhaiya | Powered by Coder Army (YouTube) 2025 🔥</marquee>
+  <hr>
+  <nav style="text-align:center;">
+    <a href="index.html">🏠 Home</a> | 
+    <a href="lecture1.html">Lecture 1</a> | 
+    <a href="lecture2.html">Lecture 2</a> | 
+    <a href="lecture3.html">Lecture 3</a> | 
+    <a href="lecture4.html">Lecture 4</a> | 
+    <a href="lecture5.html">Lecture 5</a> | 
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: What is HTML -->
+<section id="html-basics">
+  <h2>1️⃣ What is HTML?</h2>
+  <details open>
+    <summary>Definition & Overview</summary>
+    <blockquote>
+      <b>HTML (HyperText Markup Language)</b> is the backbone of web development.  
+      - <b>HyperText</b>: Connects documents via links (like Google search results).  
+      - <b>Markup</b>: Uses tags like &lt;p&gt;, &lt;h1&gt;, &lt;img&gt; to give structure & meaning.
+    </blockquote>
+    <p><b>Fact:</b> HTML was invented by <i>Tim Berners-Lee</i> in 1991. The <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">first website</a> is still live today!</p>
+    <figure>
+      <img src="https://i.insider.com/4e0b8f4dccd1d54255060000?width=900&format=jpeg&auto=webp" alt="First Website" width="400">
+      <figcaption>The world's first website (CERN, 1991)</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 2: Headings -->
+<section id="headings">
+  <h2>2️⃣ Headings (&lt;h1&gt; - &lt;h6&gt;)</h2>
+  <details>
+    <summary>Explore Headings</summary>
+    <p>Headings create a clear <b>hierarchy</b> on a web page, improving both <b>readability</b> and <b>SEO</b>.</p>
+    <pre>
+<h1>Main Title</h1>
+<h2>Section Title</h2>
+<h3>Sub-section</h3>
+    </pre>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr><th>Tag</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>&lt;h1&gt;</td><td>Main title (only once per page)</td></tr>
+        <tr><td>&lt;h2&gt;</td><td>Major sections</td></tr>
+        <tr><td>&lt;h3&gt;</td><td>Sub-sections</td></tr>
+        <tr><td>&lt;h4&gt; - &lt;h6&gt;</td><td>Less important headings</td></tr>
+      </tbody>
+    </table>
+    <figure>
+      <img src="https://cdn.prod.website-files.com/62fec8041edae129b05e72ac/648c84acdda5551242603762_Blog-Heading-Tags-for-SEO-Image1-505x330px.png" width="300" alt="Heading Hierarchy">
+      <figcaption>Heading hierarchy visualization</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 3: Paragraphs -->
+<section id="paragraphs">
+  <h2>3️⃣ Paragraphs (&lt;p&gt;)</h2>
+  <details>
+    <summary>Examples</summary>
+    <pre>
+<p>This is a paragraph.</p>
+<p>Another paragraph with meaningful content.</p>
+    </pre>
+    <blockquote>
+      Paragraphs are the <b>building blocks of text</b> on web pages. They improve readability and structure.
+    </blockquote>
+    <p><b>Tip:</b> Avoid writing everything in one paragraph—break text into smaller chunks.</p>
+  </details>
+</section>
+<hr>
+
+<!-- Section 4: Horizontal Rule & Line Break -->
+<section id="hr-br">
+  <h2>4️⃣ Horizontal Rule (&lt;hr&gt;) & Line Breaks (&lt;br&gt;)</h2>
+  <details>
+    <summary>Examples</summary>
+    <pre>
+<p>Section 1</p>
+<hr>
+<p>Section 2</p>
+
+<p>Address Line 1<br>
+Address Line 2</p>
+    </pre>
+    <p><b>Tip:</b> Use <code>&lt;br&gt;</code> only for line breaks, not for spacing!</p>
+  </details>
+</section>
+<hr>
+
+<!-- Section 5: Lists -->
+<section id="lists">
+  <h2>5️⃣ Lists (Ordered & Unordered)</h2>
+  <details>
+    <summary>Examples</summary>
+    <p>Unordered List (Bullets):</p>
+    <ul>
+      <li>Milk</li>
+      <li>Bread
+        <ul>
+          <li>Brown Bread</li>
+        </ul>
+      </li>
+      <li>Butter</li>
+    </ul>
+    <p>Ordered List (Steps):</p>
+    <ol>
+      <li>Turn on computer</li>
+      <li>Open browser</li>
+      <li>Start learning HTML 🚀</li>
+    </ol>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr><th>Unordered List (&lt;ul&gt;)</th><th>Ordered List (&lt;ol&gt;)</th></tr>
+      <tr><td>Items without sequence</td><td>Items with sequence (steps)</td></tr>
+      <tr><td>Bullets ●</td><td>Numbers 1,2,3</td></tr>
+    </table>
+  </details>
+</section>
+<hr>
+
+<!-- Section 6: Anchor Tag -->
+<section id="anchor">
+  <h2>6️⃣ Anchor Tag (&lt;a&gt;)</h2>
+  <details>
+    <summary>Link Example</summary>
+    <pre>
+<a href="https://www.coderarmy.in/" target="_blank">Visit Coder Army</a>
+<a href="#images">Jump to Images Section</a>
+<a href="lecture1.html">Go to Lecture 1</a>
+    </pre>
+    <p>Targets:</p>
+    <ul>
+      <li><b>_self</b> → Open in same tab</li>
+      <li><b>_blank</b> → Open in new tab</li>
+    </ul>
+  </details>
+</section>
+<hr>
+
+<!-- Section 7: Images -->
+<section id="images">
+  <h2>7️⃣ Images (&lt;img&gt;)</h2>
+  <details>
+    <summary>Examples</summary>
+    <p>Images make content <b>visual & engaging</b>. Always include <code>alt</code> for accessibility.</p>
+    <pre>
+<img src="https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg" alt="Cute Dog" width="400">
+<img src="https://static.vecteezy.com/system/resources/previews/026/525/162/non_2x/lion-animal-isolated-photo.jpg" alt="Cute Cat" width="400">
+    </pre>
+    <figure>
+      <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" height="150" alt="Beagle Dog">
+      <img src="https://cdn.britannica.com/56/8056-050-2B4F2F6E/tabby-cat.jpg" height="150" alt="Tabby Cat">
+      <img src="https://media.istockphoto.com/id/1404698757/photo/stack-of-books.jpg?s=612x612" height="150" alt="Books Stack">
+      <figcaption>Multiple images with alt text</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 8: Video -->
+<section id="video">
+  <h2>8️⃣ Video Example 🎬</h2>
+  <details>
+    <summary>Watch Video</summary>
+    <center>
+      <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls width="400" autoplay loop muted>
+        Your browser does not support the video tag.
+      </video>
+    </center>
+    <p><b>Attributes:</b>  
+      - <code>controls</code>: Adds play/pause UI <br>  
+      - <code>autoplay</code>: Auto-plays on load <br>  
+      - <code>loop</code>: Repeats automatically <br>  
+      - <code>muted</code>: Starts muted (important for autoplay) <br>  
+      - <code>fullscreen</code>: Users can toggle full-screen mode (usually built-in with <code>controls</code>) <br>  
+    </p>
+    
+    <h3>🔹 Embedding External Videos</h3>
+    <p>You can embed YouTube or Vimeo videos inside your webpage using the <code>&lt;iframe&gt;</code> tag.</p>
+    
+    <pre><iframe width="360" height="340" src="https://www.youtube.com/embed/1pcikNlDB-4" title="Lecture 1: Internet & Web Basics" frameborder="0" allowfullscreen></iframe></pre>
+    
+    <figure>
+
+      <figcaption>Embedding YouTube video using &lt;iframe&gt;</figcaption>
+    </figure>
+    
+    <blockquote>
+      💡 <b>Tip:</b> Use <code>allowfullscreen</code> in <code>&lt;iframe&gt;</code> to let users watch in full screen.
+    </blockquote>
+    
+  </details>
+</section>
+
+<!-- Bonus: Quick Revision -->
+<section id="revision">
+  <h2>🔑 Quick Revision of Lecture 2</h2>
+  <ul>
+    <li>HTML = Structure of the web</li>
+    <li>Headings: Create hierarchy</li>
+    <li>Paragraphs: Organize text</li>
+    <li>&lt;hr&gt; and &lt;br&gt;: Line separation tools</li>
+    <li>Lists: Ordered vs Unordered</li>
+    <li>Anchor tag: Hyperlinks (internal + external)</li>
+    <li>Images: Visual content with alt text</li>
+    <li>Video: Multimedia integration with attributes</li>
+  </ul>
+</section>
+<h2>5️⃣ Video Tutorial 🎬</h2>
+<details>
+  <summary>Watch Full HTML Deep Dive Tutorial</summary>
+  <center>
+    <iframe width="600" height="340" src="https://www.youtube.com/embed/GkZN_-HMCJ8" title="Lecture 2: HTML Basics" frameborder="0" allowfullscreen></iframe>
+        </td>
+  </center>
+</details>
+</main>
+
+
+ <!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="lecture1.html">Previous: Lecture 1</a> | 
+    <a href="lecture3.html">Next: Lecture 3</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revise Sheet |  Created By Gaurav 🚀</p>
+</footer>

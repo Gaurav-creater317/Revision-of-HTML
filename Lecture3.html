@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 3: Nested Lists & Tables</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 style="text-align:center;">📚 Lecture 3: Nested Lists & Tables</h1>
+  <marquee behavior="alternate" scrollamount="5">🔥 Series launched by Rohit Negi Bhaiya on Coder Army (YOU TUBE) 2025 🔥</marquee>
+  <hr>
+  <nav style="text-align:center;">
+    <a href="index.html">🏠 Home</a> | 
+    <a href="lecture1.html">Lecture 1</a> | 
+    <a href="lecture2.html">Lecture 2</a> | 
+    <a href="lecture3.html">Lecture 3</a> | 
+    <a href="lecture4.html">Lecture 4</a> | 
+    <a href="lecture5.html">Lecture 5</a> | 
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+  <hr>
+</header>
+
+<main>
+
+<!-- Section 1: Nested Lists -->
+<section id="nested-lists">
+  <h2>1️⃣ Nested Lists</h2>
+  <details open>
+    <summary>Overview & Notes</summary>
+    <p>
+      HTML supports two types of lists:
+      <ul>
+        <li><b>Unordered List (&lt;ul&gt;):</b> Items marked with bullets (•)</li>
+        <li><b>Ordered List (&lt;ol&gt;):</b> Items marked with numbers/letters (1, 2, 3...)</li>
+      </ul>
+      ✅ We can <b>nest lists inside list items</b> to represent hierarchy.
+    </p>
+
+    <h3>Unordered Nested List Example</h3>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables
+    &lt;ul&gt;
+      &lt;li&gt;Carrot&lt;/li&gt;
+      &lt;li&gt;Spinach&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <h3>Ordered Nested List Example</h3>
+    <pre>
+&lt;ol&gt;
+  &lt;li&gt;Step 1
+    &lt;ol&gt;
+      &lt;li&gt;Substep 1a&lt;/li&gt;
+      &lt;li&gt;Substep 1b&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Step 2
+    &lt;ol&gt;
+      &lt;li&gt;Substep 2a&lt;/li&gt;
+      &lt;li&gt;Substep 2b&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+
+    <figure>
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240514093041/Nested-Ordered-List-in-HTML.png" width="400" alt="Nested Ordered List">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240514092657/Nested-Unordered-List-in-HTML.png" width="400" alt="Nested Unordered List">
+      <figcaption>Nested Lists allow hierarchical representation</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 2: HTML Tables -->
+<section id="html-tables">
+  <h2>2️⃣ HTML Tables</h2>
+  <details open>
+    <summary>Overview & Notes</summary>
+    <p>
+      A table is used to display data in rows & columns.  
+      <ul>
+        <li><code>&lt;table&gt;</code> → wrapper element</li>
+        <li><code>&lt;tr&gt;</code> → table row</li>
+        <li><code>&lt;th&gt;</code> → table header (bold, centered)</li>
+        <li><code>&lt;td&gt;</code> → table data cell</li>
+      </ul>
+    </p>
+
+    <h3>Simple Table Example</h3>
+    <pre>
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;New York&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Emma&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;London&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <figure>
+      <img src="https://dotnettutorials.net/wp-content/uploads/2021/11/word-image-533.png" width="400" alt="Simple Table Example">
+      <figcaption>Basic HTML Table</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 3: Advanced Tables -->
+<section id="advanced-tables">
+  <h2>3️⃣ Advanced Tables (Thead, Tbody, Tfoot)</h2>
+  <details>
+    <summary>Example</summary>
+    <pre>
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Product&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th&gt;Stock&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Laptop&lt;/td&gt;
+      &lt;td&gt;$1000&lt;/td&gt;
+      &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Mouse&lt;/td&gt;
+      &lt;td&gt;$25&lt;/td&gt;
+      &lt;td&gt;200&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2"&gt;Total Products&lt;/td&gt;
+      &lt;td&gt;250&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+    </pre>
+
+    <figure>
+      <img src="https://www.codewithfaraz.com/img/Mastering%20the%20Table%20Tag%20in%20HTML%20A%20Comprehensive%20Guide.jpg" width="400" alt="Advanced Table Example">
+      <figcaption>Advanced Table with Head, Body, and Foot</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 4: Merge Cells -->
+<section id="merge-cells">
+  <h2>4️⃣ Merge Cells (Colspan & Rowspan)</h2>
+  <details>
+    <summary>Example</summary>
+    <pre>
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2"&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;Marks&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Math&lt;/th&gt;
+    &lt;th&gt;Science&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;95&lt;/td&gt;
+    &lt;td&gt;88&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <figure>
+      <img src="https://holyfly.com/webdesign/images/tables6.gif" width="400" alt="Colspan Example">
+      <img src="https://www.learntosap.com/html39.jpg" width="400" alt="Rowspan Example">
+      <figcaption>Colspan merges columns, Rowspan merges rows</figcaption>
+    </figure>
+  </details>
+</section>
+<hr>
+
+<!-- Section 5: Video Tutorial -->
+<section id="video">
+  <h2>5️⃣ Video Tutorial 🎬</h2>
+  <details>
+    <summary>Watch Full HTML Lists & Tables Tutorial</summary>
+    <center>
+      <iframe width="600" height="340" src="https://www.youtube.com/embed/AJ4E1zf5tQs" title="Lecture 3: Lists, Tables & Images" frameborder="0" allowfullscreen></iframe>
+    </center>
+  </details>
+</section>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p style="text-align:center;">
+    ⬅ <a href="lecture2.html">Previous: Lecture 2</a> | 
+    <a href="lecture4.html">Next: Lecture 4</a> ➡
+  </p>
+  <p style="text-align:center;">&copy; 2025 HTML Lecture Series Revise Sheet |  Created By Gaurav 🚀</p>
+</footer>
+
+</main>
+</body>
+</html>
