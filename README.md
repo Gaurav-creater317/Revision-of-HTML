@@ -10,7 +10,9 @@
 
 | **Achievement** | **Hackathon Announcement Video** |
 |-----------------|--------------------------------|
-| <img src="92%20nd%20Rank.jpeg" width="600" /> | [![Watch the video](https://img.youtube.com/vi/eUfzneMLOcY/0.jpg)](https://www.youtube.com/watch?v=eUfzneMLOcY)<br><br>*Video Details:* The video is the official announcement of the HTML Hackathon organized by Coder Army. It showcases the hackathon overview, participation details, and highlights of the competition. This project was submitted during this hackathon and helped secure a **92nd rank out of 2100+ participants**. |
+| <img src="92%20nd%20Rank.jpeg" width="700" /> | <a href="https://www.youtube.com/watch?v=eUfzneMLOcY"><img src="https://img.youtube.com/vi/eUfzneMLOcY/0.jpg" width="500" /></a> |
+
+*Video Details:* The video is the official announcement of the HTML Hackathon organized by Coder Army. It showcases the hackathon overview, participation details, and highlights of the competition. This project was submitted during this hackathon and helped secure a **92nd rank out of 2100+ participants**.  
 
 ---
 
@@ -28,6 +30,4 @@ This is a **multipage HTML project** designed for **quick revision of all core H
 
 ## Explore
 
-Check out the **live project demo** here: [revisionofhtml.netlify.app](https://revisionofhtml.netlify.app/)  
-
-Feel free to **browse through all pages** and strengthen your HTML fundamentals by seeing **practical examples** of tags, attributes, forms, tables, and more.
+Check out the **live project demo** here: [revisionofhtml.netli]()
