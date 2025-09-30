@@ -1,6 +1,6 @@
 # Quick HTML Revision – Multipage Website  
 
-# 🏆 **Secured 92nd rank **  
+# 🏆 ** Secured 92nd rank **  
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://revisionofhtml.netlify.app/)  
 
