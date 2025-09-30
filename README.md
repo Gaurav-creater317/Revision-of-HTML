@@ -30,4 +30,4 @@ This is a **multipage HTML project** designed for **quick revision of all core H
 
 ## Explore
 
-Check out the **live project demo** here: [revisionofhtml.netli]()
+Check out the **live project demo** here: https://revisionofhtml.netlify.app/
