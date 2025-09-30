@@ -1,6 +1,6 @@
 # Quick HTML Revision – Multipage Website  
 
-🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
+# 🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
 
 **Live Demo:** [revisionofhtml.netlify.app](https://revisionofhtml.netlify.app/)  
 
