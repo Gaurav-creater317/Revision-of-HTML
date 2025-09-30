@@ -1,14 +1,32 @@
 # Quick HTML Revision – Multipage Website  
 
-# 🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
+🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
 
 **Live Demo:** [revisionofhtml.netlify.app](https://revisionofhtml.netlify.app/)  
 
-🎥 **Hackathon Announcement Video:**  
+---
+
+### Hackathon Highlights:
+
+<table>
+<tr>
+<td>
+
+**Achievement:**  
+<img src="92%20nd%20Rank.jpeg" alt="HTML Hackathon Winner" width="300" />
+
+</td>
+<td>
+
+**Hackathon Announcement Video:**  
 [![HTML Hackathon Announcement](https://img.youtube.com/vi/eUfzneMLOcY/0.jpg)](https://www.youtube.com/watch?v=eUfzneMLOcY)  
 
 *Video Details:*  
 The video is the official announcement of the HTML Hackathon organized by Coder Army. It showcases the hackathon overview, participation details, and highlights of the competition. This project was submitted during this hackathon and helped secure a **92nd rank out of 2100+ participants**.  
+
+</td>
+</tr>
+</table>
 
 ---
 
