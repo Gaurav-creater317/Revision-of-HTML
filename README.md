@@ -10,7 +10,7 @@
 
 | **Achievement** | **Hackathon Announcement Video** |
 |-----------------|--------------------------------|
-| <img src="92%20nd%20Rank.jpeg" alt="HTML Hackathon Winner" width="400" style="border-radius: 10px; box-shadow: 2px 2px 10px #888888;"/> | [![Watch the video](https://img.youtube.com/vi/eUfzneMLOcY/0.jpg)](https://www.youtube.com/watch?v=eUfzneMLOcY)<br><br>*Video Details:* The video is the official announcement of the HTML Hackathon organized by Coder Army. It showcases the hackathon overview, participation details, and highlights of the competition. This project was submitted during this hackathon and helped secure a **92nd rank out of 2100+ participants**. |
+| <img src="92%20nd%20Rank.jpeg" alt="HTML Hackathon Winner" width="500" style="border-radius: 10px; box-shadow: 2px 2px 10px #888888;"/> | [![Watch the video](https://img.youtube.com/vi/eUfzneMLOcY/0.jpg)](https://www.youtube.com/watch?v=eUfzneMLOcY){:width="500px"}<br><br>*Video Details:* The video is the official announcement of the HTML Hackathon organized by Coder Army. It showcases the hackathon overview, participation details, and highlights of the competition. This project was submitted during this hackathon and helped secure a **92nd rank out of 2100+ participants**. |
 
 ---
 
