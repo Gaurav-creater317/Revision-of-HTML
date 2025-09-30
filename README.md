@@ -1,6 +1,6 @@
 # Quick HTML Revision – Multipage Website  
 
-🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
+# 🏆 **Secured 92nd rank out of 2100+ participants in the HTML Hackathon organized by Coder Army**  
 
 <img src="92%20nd%20Rank.jpeg" alt="HTML Hackathon Winner" width="500" />  
 
